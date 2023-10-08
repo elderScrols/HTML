@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tabelas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <!-- "TD" é uma célula simples -->
+    <!-- "TH" é usado como cabeçalho-->
+
+    <!-- Tabela -->
+    <table border=2px">
+
+        <!-- Título -->
+        <caption>Tabela simples 3x3</caption>
+        
+        <tr>
+            <td>célula 1</td>
+            <td>célula 2</td>
+            <td>célula 3</td>
+        </tr>
+        <tr>
+            <td>célula 1</td>
+            <td>célula 2</td>
+            <td>célula 3</td>
+        </tr>
+        <tr>
+            <td>célula 1</td>
+            <td>célula 2</td>
+            <td>célula 3</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Unificação de células -->
+    <table border="2px">
+        
+        <!-- Título -->
+        <caption>Tabela com células unidas</caption>
+        
+        <tr>
+            <th>Setembro</th>
+            <th>Dia 1</th>
+            <th>Dia 2</th>
+            <th>Dia 3</th>
+            <th>Dia 4</th>
+        </tr>
+        <tr>
+            <th>Skyrim</th>
+            <td colspan="3">0 km</td> <!-- Consegue juntar com a célula ao lado -->
+            <td>4 km</td>
+        </tr>
+        <tr>
+            <th>Susan</th>
+            <td>23 km</td>
+            <td>18 km</td>
+            <td>19 km</td>
+            <td>15 km</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!--Tabela com células unidas por rowspan-->
+    <table border="2px">
+        
+        <!-- Título -->
+        <caption>Tabela com células unidas por rowspan</caption>
+        
+        <tr>
+            <th>&nbsp;</th> <!-- célula vazia -->
+
+            <th>Básico</th>
+            <th>Completo</th>
+        </tr>
+        <tr>
+            <th>Instalação</th>
+            <td rowspan="2">Gratis!</td> <!-- Consegue juntar com a célula de baixo -->
+            <td>$49.99</td>
+        </tr>
+        <tr>
+            <th>Primeiro ano</th>
+            <td>$19.99</td>
+        </tr>
+        <tr>
+            <th>Segundo ano</th>
+            <td>$9.99</td>
+            <td>29.99</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- O atributo scope -->
+    <!-- "col", "row", "colgroup" e "rowgroup". Os valores "col" e "row"  -->
+
+    <table border="2px">
+        <tr>
+            <th scope="row">Dia</th>
+            <th>Hoje</th>
+            <th>Amanhã</th>
+            <th>Quinta-feira</th>
+        </tr>
+        <tr>
+            <th>Condição</th>
+            <td>Ensolamento</td>
+            <td>Bastante ensolado</td>
+            <td>Parcialmente nublado</td>
+        </tr>
+        <tr>
+            <th>Temperatura</th>
+            <td>19°C</td>
+            <td>17°C</td>
+            <td>12°C</td>
+        </tr>
+        <tr>
+            <th>Ventos</th>
+            <td>L 13 km/h</td>
+            <td>L 11 km/h</td>
+            <td>S 16 Km/h</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

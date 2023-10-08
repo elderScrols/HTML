@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Estrutura  do formulário</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <!-- Começo do Forumulário começa com  a tag "form" -->
+    <form></form>
+
+    <!-- Action que se refere à página para qual as informações no formulário irão -->    
+    <form action="pagina.php"></form>
+
+    <!-- Existem dois tipos de forma de enviar essas informações -->
+    <!-- Get: Enviado vai URL, onde aparece o caminho via url "menos seguro" -->
+    <!-- Post: Enviado de uma forma que não podemos vê-los "mais segura" então caso seja senhas e recomendado o "post" -->
+    
+    <!-- Método "Get" -->
+    <form action="pagina.php" method="get"></form>
+
+    <!-- Método "Post" -->
+    <form action="pagina.php" method="post"></form>
+
+    <!-- "Enctype" permite que você carregue arquivos para o servidor -->
+    <form enctype="application/x-www-form-urlencoded"></form>
+
+    <form enctype="multipart/formdata"></form>
+    
+</body>
+</html>

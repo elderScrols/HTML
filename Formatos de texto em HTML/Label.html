@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Label</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+<form action="arquivo.php" method="post">
+
+    <!-- Colocamos o "for"  para vindcular com o "id" onde posso identificar o item -->
+    <label for="numero">Coloque um número: </label>
+    <input type="text" name="numero" size="20" id="numero"> <input type="submit" value="Enviar" id="numero">
+
+</form>
+<form action="arquivo.php" method="post">
+
+    <!-- Bordinha -->
+    <fieldset>
+
+        <!-- Legenda da bordinha -->
+        <legend>Formulario de comentarios.</legend>
+        <br>
+        
+        <label for="nome">Coloque um nome: </label>
+        <input type="text" name="nome" size="30" id="nome">
+        <br><br>
+
+        <label for="mail">Coloque seu E-mail: </label>
+        <input type="text" name="mail" size="50" id="mail">
+        <br><br>
+
+        <label for="comentarios">Comentários: </label>
+        <br>
+        <!-- Comentário -->
+        <textarea name="comentarios" rows="5" cols="60" id="comentarios"></textarea>
+        <br>
+
+        <input type="submit" value="Enviar" id="enviar">
+
+    </fieldset>
+
+</form>
+
+</body>
+</html>
